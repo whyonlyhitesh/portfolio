@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whyonlyhitesh</title>
+    <link rel="icon" type="images/png" href="images/logo_trans_h_bold.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a36897a85f.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "i4u605tz2t");
+</script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="images/logo_trans_h_bold.png" class="logo">
+                </a>
+                <ul id="sidememu">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact-me.html">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closememu()"></i>
+                </ul>
+                    <i class="fa-solid fa-bars" onclick="openmemu()"></i>
+                </nav>
+   
+        <!-- --------about-------->
+        <div id="about">
+            <div class="animated animatedFadeInUp fadeInUp container">
+                <h1 class="sub-title">About Me</h1>
+                <p><br>I'm Hitesh, a passionate 19-year-old with a thirst for exploration. 
+                    Whether it's discovering new places, diving into fresh concepts, or exploring cutting-edge technologies, 
+                    I'm always up for the adventure. Currently pursuing Biotechnology at the esteemed 
+                    National Institute of Technology Warangal, soon to be an engineer.</p>
+                <p><br>I have experience in both biology and technology, with a background in research 
+                    and a passion for solving real-world problems through tech. I'm a quick learner and 
+                    voracious reader, constantly seeking new knowledge and insights.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')"><strong>Skills</strong></p>
+                    <p class="tab-links" onclick="opentab('tools')"><strong>Tools</strong></p>
+                    <p class="tab-links" onclick="opentab('techniques')"><strong>Techniques</strong></p>
+                    <p class="tab-links" onclick="opentab('experience')"><strong>Experience</strong></p>
+                    <!-- <p class="tab-links" onclick="opentab('education')">Education</p> -->
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Language</span><br>Python(Library = pandas, numpy, selenium, tkinter, customtkinter), SQL, C++</li>
+                        <li><span>Front End Developer</span><br>HTML, CSS</li>
+                        <li><span>Automation & Command Line </span><br>Bash</li>
+                        <li><span>Dry Lab </span><br>Docking, MD Simulations, Free Energy Calculations</li>
+                        <li><span>Wet Lab </span><br>Cloning, Protein Expression, Protein Purification<li>
+                    </ul>
+                </div>
+            <div class="tab-contents" id="techniques">
+                <ul>
+                    <li><span>Dry Lab: MD Simulations</span><br>Gromacs</li>
+                    <li><span>Dry Lab: Free Energy Calculations</span><br>Metadynamics</li>
+                    <li><span>Dry Lab: Docking</span><br>AutoDock Vina</li>
+                    <li><span>Dry Lab: Visualization</span><br>PyMOL, UCFS Chimera</li>
+                    <li><span>Wet Lab </span><br>PCR, RAPD, Cloning, Blue White Screening, Protein Expression, Protein Purification, Spectrophotometry</li>
+                </ul>
+            </div>
+                <div class="tab-contents" id="tools">
+                    <ul>
+                        <li><span>Microsoft Tools</span><br>Microsoft Word, Microsoft PowerPoint, Microsoft Excel, Power BI</li>
+                        <li><span>Database Management</span><br>MySQL</li>
+                        <li><span>Design</span><br>Canva, Adobe Photoshop, Adobe Illustrator</li>
+                        <li><span>Videography</span><br>Adobe Premiere Pro, Kdenlive</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>June 2023 - August 2023 <strong>:</strong> On-Site</span><br>Research Scholar at <strong>Morii Lab, Kyoto University</strong></li>
+                        <li><span>May 2022 - May 2023 <strong>:</strong> On-Site</span><br>Research Scholar at <strong>Rath Lab, National Institute of Technology Warangal</strong></li>
+                        <li><span>March 2022 - August 2022 <strong>:</strong> Part-Time Remote</span><br>Social media posts & Video Editor at <strong>Digitalaxo</strong></li>
+                    </ul>
+                </div>
+                <!-- <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>December 2020 – Present</span><br>B.Tech Biotechnology: <strong>National Institute of Technology Warangal</strong></li>
+                        <li><span>July 2019 - July 2020</span><br>12th Grade on Pure Science: <strong>Taywade College (Maharashtra Board)</strong></li>
+                        <li><span>June 2017 - May 2018</span><br>10th Grade: <strong>Centre Point School (CBSE)</strong></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidememu = document.getElementById("sidememu")
+        function openmemu() {
+            sidememu.style.right = "0";
+        }
+        function closememu() {
+            sidememu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
