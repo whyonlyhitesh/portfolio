@@ -6,21 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>whyonlyhitesh</title>
-    <link rel="icon" type="image/png" href="images/logo_trans_h_bold.jpg">
+    <link rel="icon" type="images/png" href="images/logo_trans_h_bold.jpg">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a36897a85f.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
-        (function(c, l, a, r, i, t, y) {
-            c[a] = c[a] || function() {
-                (c[a].q = c[a].q || []).push(arguments)
-            };
-            t = l.createElement(r);
-            t.async = 1;
-            t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0];
-            y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "i4u605tz2t");
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "i4u605tz2t");
     </script>
+    
+        <style> 
+            body { 
+                margin: 0; 
+                font-family: 'Nunito'; 
+            } 
+              
+            .top { 
+                padding: 3em; 
+                display: grid; 
+                grid-gap: 2em; 
+                grid-template-columns: repeat( 
+                        auto-fit, minmax(250px, 1fr)); 
+      
+                .quote { 
+                    padding: 2em; 
+                    border-radius: .3em; 
+                    box-shadow: 10px 10px 30px  
+                            rgba(0, 0, 0, 0.1); 
+                    p { 
+                        margin-top: 0; 
+                    } 
+                    span { 
+                        font-weight: bold; 
+                        position: relative; 
+                        margin-left: 15px; 
+                        &:before { 
+                            content: ''; 
+                            position: absolute; 
+                            height: 1px; 
+                            width: 10px; 
+                            border-bottom: 1px solid black; 
+                            top: 10px; 
+                            left: -15px; 
+                        } 
+                    } 
+                } 
+            } 
+        </style> 
+
 </head>
 
 <body>
@@ -39,12 +74,46 @@
                 </ul>
                     <i class="fa-solid fa-bars" onclick="openmemu()"></i>
                 </nav>
-            <div class="header-text animated animatedFadeInUp fadeInUp">
-                <p>🚧🛠️Work Under Progress🛠️🚧<br>
-                </p>
+        <!-- -------chronicles------ -->
+        <div id="chronicles">
+            <div class="container animated animatedFadeInUp fadeInUp">
+                <h1 class="sub-title">Tales from the Chronicles</h1>
+                Where every story sparks joy and invokes the spirit of a new adventure!
+                <div class=" top work-list">
+                    <div class="quote work"> 
+                        <p> 
+                            <img src="images/work1.png">
+                            <div class="layer">
+                                <h3 ><b>whyonlyhitesh.substack</b></h3>
+                                <p >
+                                    Dive into my Substack, where I serve up a delightful mix of books, biology, privacy, and security! 
+                                    Subscribe for your regular dose of fun and captivating articles!
+                                </p>
+                                <a href="https://whyonlyhitesh.substack.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </p> 
+                    </div>
+
+                    <div class="quote work"> 
+                        <p> 
+                            <img src="images/work6.png">
+                            <div class="layer">
+                                <h3 ><b>Video Editor for Reticulum</b></h3>
+                                <p >
+                                    I volunteered as a video editor for Reticulum (a STEM student community focused on experiential learning and knowledge sharing).
+                                    This initiative was founded by my close friend and senior from NIT Warangal. Please subscribe to their YouTube channel.
+                                </p>
+                                <a href="https://www.youtube.com/@reticulum9028" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </p> 
+                    </div>
+                </div>
             </div>
         </div>
+        </div>
     </div>
+
+    
 
     <script>
         var sidememu = document.getElementById("sidememu");
